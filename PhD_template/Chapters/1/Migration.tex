@@ -1,0 +1,55 @@
+\section{Migration Triggers with Time-Series Forecasting}
+
+The ideas below come from a survey paper \cite{Toumi2023}.
+
+\subsection{Mobility Prediction}
+
+
+\begin{itemize}
+    \item \textbf{Superior Long-Term Data Handling:} The Informer model excels in processing long-term data patterns, surpassing traditional methods like LSTM and GRU \cite{Zhang2020, Wu2019}.
+    \item \textbf{Importance in Telecommunication Networks:} Its accuracy in predicting user and vehicle movements is vital for network management, especially for proactive scenarios like handover or radio resource reservation \cite{Haghshenas2022, Zhang2018}.
+    \item \textbf{Advanced Transformer Architecture:} The model's transformer architecture, with sparse attention mechanisms, is adept at identifying complex, long-term mobility patterns \cite{Vaswani2017}.
+    \item \textbf{Versatility in Data Processing:} The Informer handles diverse datasets efficiently, including urban vehicular movements and various user mobility patterns, sometimes augmented with additional data such as social behavior or resource demand information \cite{Kim2019, Nguyen2019}.
+    \item \textbf{Advantage over Traditional Machine Learning Methods:} While traditional methods struggle with multifaceted datasets, the Informer's sophisticated architecture manages them more effectively, leading to more accurate and reliable predictions \cite{Li2020, Lin2018}.
+    \item \textbf{Implications for Next-Generation Networks:} In next-generation telecommunication networks and edge computing environments, the accuracy of mobility predictions from the Informer model can significantly influence resource allocation and overall quality of service (QoS) \cite{Duggan2017, Park2020}.
+    \item \textbf{Setting a New Standard in Mobility Prediction:} The advanced approach of the Informer model to long-term forecasting positions it as a potential game-changer in the field, establishing a new benchmark for mobility prediction in modern mobile networks \cite{Vaswani2017, Wu2019}.
+\end{itemize}
+
+\subsection{Workload Forecasting for Migration}
+
+\begin{itemize}
+    \item \textbf{Early Detection of Overload/Underload Situations:} Accurate forecasting enables identification of hosts that are either over-loaded and may not support VM scaling, or under-loaded, where consolidation could enhance energy efficiency \cite{Ricardo2021, Li2019}.
+    \item \textbf{Evaluation of ML-Based Prediction Methods:} Research by Ricardo et al. evaluates various machine learning methods, such as Linear Regression, Neural Networks, and LSTM, emphasizing their significance in the VM migration process \cite{Ricardo2021, Duggan2017}.
+    \item \textbf{Utilization of Real-World Data:} The tool employs datasets from real-world sources like the CoMon monitoring system, providing realistic inputs for predictive models \cite{Park2006, Gill2022}.
+    \item \textbf{Focus on Short-Term Forecasting with RNNs:} RNN-based methods are predominantly used for short-term forecasting, showing effectiveness in predicting CPU usage and traffic load \cite{Mason2018, Duggan2017}.
+    \item \textbf{Comparison of Forecasting Methods:} Various methods, including statistical, regression-based, and neural network-based models, are compared, showing that simpler methods can sometimes match the performance of complex models \cite{Nguyen2019, Hieu2020}.
+    \item \textbf{Efficiency in Medium and Long-Term Prediction:} For longer-term forecasts, neural network methods like ConvLSTM demonstrate higher efficiency, important for informed long-term planning \cite{Bega2020, Fiandrino2020}.
+    \item \textbf{Integration of Contextual Information:} Adding contextual data and correlating information can enhance the accuracy of predictions, improving overall performance of the forecasting system \cite{Kim2019, Bega2020}.
+\end{itemize}
+
+\subsection{Failure Prediction in High-Availability Systems}
+
+\begin{itemize}
+    \item \textbf{Critical Role of Anomaly Detection and Prediction:} Machine learning, especially deep learning, has proven effective in failure mitigation and avoidance, crucial in high-availability systems \cite{Pang2021, Lin2018}.
+    \item \textbf{Methodology for Failure Detection:} Works cited use workload metrics or log messages to trigger proactive migration from potentially faulty nodes to healthier ones. Failure prediction differs from mobility and load prediction by forecasting discrete values (i.e., the occurrence of failure) \cite{Li2020, Vu2021}.
+    \item \textbf{Importance of Precision and Recall:} To accurately evaluate failure prediction performance, it's essential to measure precision along with recall or calculate the F1 score, considering the significance of reducing both false negatives and positives \cite{Nam2021, Das2018}.
+    \item \textbf{Challenges in Dataset Availability:} Obtaining balanced datasets for training is difficult due to the rarity of failures and the lack of standardized logging practices \cite{Frank2019, Haghshenas2022}.
+    \item \textbf{Types of Datasets Used:} Research involves analyzing performance metric traces or log messages. Performance metrics include CPU and memory usage, disk-level sensor data, and system-level signals \cite{Li2020, Lin2018}.
+    \item \textbf{Innovative Approaches in Failure Prediction:} Examples include using Ali-Baba data-center monitoring data, a Bi-LSTM model combined with a Random Forest model for detecting node dependencies, and a Multi-Agent ML-Based approach with Q-learning \cite{Li2020, Lin2018, Haghshenas2022}.
+\end{itemize}
+
+\section{Migration Scheme Optimization}
+
+Time-series forecasting plays a pivotal role in optimizing migration schemes. The dynamic and often unpredictable nature of workload and network conditions in cloud environments makes it essential to forecast trends and patterns to make informed decisions about migration strategies. The ideas below come from a survey paper \cite{Toumi2023}.
+
+\begin{itemize}
+    \item \textbf{Predictive Analysis for Migration Strategies:} Utilizing time-series data, predictive models can forecast the performance impact of different migration strategies, like pre-copy, post-copy, and hybrid-copy. This enables administrators to choose strategies that minimize downtime and optimize resource utilization \cite{220,224}.
+    
+    \item \textbf{Forecasting Network and Workload Conditions:} Time-series forecasting is crucial for predicting network bandwidth availability and workload demands. These predictions aid in dynamically adjusting the migration process, such as bandwidth allocation and prioritization of data transfer \cite{229}.
+    
+    \item \textbf{Enhanced Decision-Making for Live Migrations:} Accurate forecasting of future system states helps in making proactive decisions for live migrations, such as timing of migration, selection of data compression techniques, and CPU throttling schedules \cite{218,219}.
+    
+    \item \textbf{Machine Learning Integration:} Integrating time-series forecasting with machine learning techniques like regression models and neural networks allows for more nuanced and accurate predictions of the migration outcomes under various scenarios \cite{221,222}.
+\end{itemize}
+
+The integration of time-series forecasting into migration scheme optimization is therefore crucial for enhancing the efficiency, reliability, and performance of cloud services.

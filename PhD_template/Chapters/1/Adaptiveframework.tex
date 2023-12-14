@@ -1,0 +1,23 @@
+\section{Adaptive Framework (MLOps + Informer) for Traffic Prediction in Edge Computing}
+
+This section explores an innovative adaptive framework for predicting network traffic in edge computing environments. It integrates Edge MLOps \cite{9610376, 10188244} with tools like MLflow, Seldon, and MinIO S3 buckets, and employs Dynamic Time Warping (DTW) for effective clustering of traffic data \cite{Downey2023, Tuna2023, Soysal2023}.
+
+\begin{itemize}
+    \item \textbf{Framework Overview:} The framework uses informers and DTW-based clustering for accurate traffic prediction in edge computing scenarios. It leverages MLflow for model tracking, Seldon for model serving, and MinIO as an S3-compatible storage solution \cite{Downey2023}.
+    
+    \item \textbf{DTW-Based Clustering:} Dynamic Time Warping (DTW) is utilized for clustering network traffic data, enabling the framework to capture and adapt to varying traffic patterns efficiently \cite{Tuna2023}.
+    
+    \item \textbf{MLOps Integration:} Integrating MLOps principles streamlines the machine learning lifecycle, encompassing model development, testing, and deployment. This ensures efficient model management and rapid deployment in dynamic edge environments \cite{Soysal2023}.
+
+    \item \textbf{Model Selection Using Real-Time Data:} MLflow plays a critical role in model deployment. By attaching datasets as artifacts, it allows for comparison of real-time data with existing models. This enables the selection of the most appropriate model based on current network conditions \cite{Downey2023}.
+
+    \item \textbf{CI/CD Integration for Model Updates:} The framework incorporates a Continuous Integration/Continuous Deployment (CI/CD) pipeline, allowing for seamless model updates and shifts without disrupting ongoing inference processes. This ensures that model enhancements and adaptations are deployed efficiently, maintaining uninterrupted service in dynamic edge computing environments. 
+
+    \item \textbf{Real-Time Traffic Prediction:} Advanced machine learning techniques, including informers, are employed for real-time traffic prediction, improving the responsiveness and accuracy of traffic management in edge computing networks \cite{Downey2023}.
+    
+    \item \textbf{Adaptability and Scalability:} The framework is designed to adapt to changing network conditions and scale efficiently, ensuring consistent performance and reliability in diverse and uncertain edge environments \cite{Tuna2023, Soysal2023}.
+\end{itemize}
+
+\subsection{Related Work}
+Downey et al. \cite{Downey2023} initially proposed an adaptive framework using time-series analysis for network traffic prediction. Tuna and Soysal \cite{Tuna2023, Soysal2023} extended this work, focusing on the integration of MLOps and the application of DTW for clustering in traffic prediction within edge computing scenarios.
+
